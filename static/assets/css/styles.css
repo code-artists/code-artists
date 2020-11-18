@@ -1,0 +1,72 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+footer {
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.profile {
+    width: 240px;
+    padding: 30px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.profile.thomas {
+    background: #4CAC9D;
+}
+
+.profile.christof {
+    background: #5BB66F;
+}
+
+.profile.andreas {
+    background: #A15277;
+}
+
+.profile.nils {
+    background: #FDA246;
+}
+
+.profile.philipp {
+    background: #4B6A78;
+}
+
+.profile h2 {
+    font-size: 20px;
+    font-weight: 200;
+    padding-top: 12px;
+    line-height: 1.1;
+}
+
+.profile h3 {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.img-circle {
+    width: 80%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
