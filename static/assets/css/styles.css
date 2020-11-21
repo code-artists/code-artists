@@ -1,53 +1,95 @@
 body {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    text-align: center;
 }
 
 header {
-    text-align: center;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
+}
+
+header h1 {
+    font-family: 'Merriweather', serif;
+    color: slategray;
+    padding-top: 6rem;
+    margin-bottom: 1rem;
+}
+
+header h2 {
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-size: 1.2rem;
+    color: crimson;
 }
 
 footer {
-    text-align: center;
+    color: grey;
     padding-top: 3rem;
 }
 
-.main {
-    display: flex;
-    flex-direction: row;
+.description {
+    width: 600px;
+    color: darkslategrey;
     margin: 0 auto;
+    padding-bottom: 3rem;
+    text-align: justify;
+}
+
+.main {
 }
 
 .profile {
+    display: inline-block;
+    vertical-align: top;
     width: 240px;
-    padding: 30px;
     color: #ffffff;
-    text-align: center;
 }
 
-.profile.thomas {
+.profile .summary {
+    max-height: 276px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 30px;
+}
+
+.profile .skills {
+    min-height: 148px;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.profile .skills .skill {
+    display: inline-block;
+    border-radius: 4px;
+    margin: 2px;
+    padding: 4px;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.profile.thomas,
+.profile.thomas .skills .skill {
     background: #4CAC9D;
 }
 
-.profile.christof {
+.profile.christof,
+.profile.christof .skills .skill {
     background: #5BB66F;
 }
 
-.profile.andreas {
+.profile.andreas,
+.profile.andreas .skills .skill {
     background: #A15277;
 }
 
-.profile.nils {
+.profile.nils,
+.profile.nils .skills .skill {
     background: #FDA246;
 }
 
-.profile.philipp {
+.profile.philipp,
+.profile.philipp .skills .skill {
     background: #4B6A78;
 }
 
