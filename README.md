@@ -1,1 +1,1 @@
-# hh-devs-front
+# code-artists
