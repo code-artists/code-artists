@@ -5,22 +5,18 @@ body {
     text-align: center;
 }
 
-header {
-    padding-bottom: 2rem;
-}
-
-header h1 {
-    font-family: 'Merriweather', serif;
-    color: slategray;
-    padding-top: 6rem;
-    margin-bottom: 1rem;
+header img {
+    width: 100%;
+    padding: 1rem 1rem 0 1rem;
 }
 
 header h2 {
+    margin: 0;
+    padding: 1rem;
     text-transform: uppercase;
     letter-spacing: 6px;
-    font-size: 1.2rem;
-    color: crimson;
+    font-size: 1rem;
+    color: slategrey;
 }
 
 footer {
@@ -28,32 +24,43 @@ footer {
     padding-top: 3rem;
 }
 
-.description {
-    width: 600px;
-    color: darkslategrey;
+footer .copyright-holders {
     margin: 0 auto;
-    padding-bottom: 3rem;
-    text-align: justify;
+    padding-top: 1rem;
+    font-size: 14px;
+    color: lightgrey;
+    max-width: 20rem;
 }
 
-.main {
+.description {
+    color: slategrey;
+    margin: 0 1rem 1rem 1rem;
+    padding: 1rem 0;
+    text-align: justify;
+    border-top: rgba(0, 0, 0, 0.3) dashed 1px;
+    border-bottom: rgba(0, 0, 0, 0.3) dashed 1px;
+}
+
+.description strong {
+    color: darkslategray;
 }
 
 .profile {
-    display: inline-block;
+    margin: 0 1rem;
     vertical-align: top;
-    width: 240px;
     color: #ffffff;
 }
 
+.profile:not(:first-child) {
+    margin-top: 1rem;
+}
+
 .profile .summary {
-    max-height: 276px;
     background: rgba(0, 0, 0, 0.2);
     padding: 30px;
 }
 
 .profile .skills {
-    min-height: 148px;
     padding: 12px;
     background: rgba(255, 255, 255, 0.8);
 }
@@ -108,7 +115,42 @@ footer {
 }
 
 .img-circle {
-    width: 80%;
+    width: 30%;
     border-radius: 50%;
     margin-bottom: 15px;
+}
+
+@media (min-width: 480px) {
+    header img {
+        width: 32%;
+    }
+
+    header h2 {
+        font-size: 1.2rem;
+    }
+
+    .profile {
+        display: inline-block;
+        width: 240px;
+        margin: 0;
+    }
+
+    .profile:not(:first-child) {
+        margin-top: 0;
+    }
+
+    .profile .summary {
+        max-height: 276px;
+    }
+
+    .img-circle {
+        width: 80%;
+    }
+}
+
+@media (min-width: 960px) {
+    .description {
+        max-width: 40rem;
+        margin: 0 auto 1rem auto;
+    }
 }
