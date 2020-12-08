@@ -56,7 +56,6 @@ footer .copyright-holders {
 }
 
 .profile .summary {
-    background: rgba(0, 0, 0, 0.2);
     padding: 30px;
 }
 
@@ -77,27 +76,27 @@ footer .copyright-holders {
 
 .profile.thomas,
 .profile.thomas .skills .skill {
-    background: #4CAC9D;
+    background: #538FB0;
 }
 
 .profile.christof,
 .profile.christof .skills .skill {
-    background: #5BB66F;
+    background: #3F68A1;
 }
 
 .profile.andreas,
 .profile.andreas .skills .skill {
-    background: #A15277;
+    background: #274C85;
 }
 
 .profile.nils,
 .profile.nils .skills .skill {
-    background: #FDA246;
+    background: #3F68A1;
 }
 
 .profile.philipp,
 .profile.philipp .skills .skill {
-    background: #4B6A78;
+    background: #538FB0;
 }
 
 .profile h2 {
